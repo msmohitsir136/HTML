@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="div.css">
+<!DOCTYPE html>
+</head>
+<body>
+<div class="cen1">
+<div class="header"><h3 align="center">Heading...</h3></div>
+
+<div class="left">
+<br/><br/><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a>Link 1</a><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a>Link 2</a><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a>Link 3</a><br/><br/>
+</div>
+
+<div class="futter">
+<h4 align="center" font="normal">Copyright webonise ltd. </h4>
+</div>
+
+<div class="mid">
+<div class="box">
+<br/><h4 align="center">Image</h4>
+</div>
+<p class="par">Using just one element you can create parallax effects, multiple background colours, multiple background images, clipped background images, image replacement, expandable boxes using images for borders, fluid faux columns, images existing outside the box, the appearance of multiple borders, and other popular effects that usually require images and/or the use of presentational HTML. It is also possible to include 2 extra presentational images as generated content.
+demo pages show how several popular examples of these effects can be achieved with this technique.
+Most structural elements will contain child elements. Therefore, more often than not, you will be able to gain a further 2 pseudo-elements to use in the presentation by generating them from the first child (and even last-child) element of the parent element. In addition, you can use style changes on :hover to produce complex interaction effects.Using just one element you can create parallax effects, multiple background colours, multiple background images, clipped background images, image replacement, expandable boxes using images for borders, fluid faux columns, images existing outside the box, the appearance of multiple borders, and other popular effects that usually require images and/or the use of presentational HTML. It is also possible to include 2 extra presentational images as generated content.
+demo pages show how several popular examples of these effects can be achieved with this technique.
+Most structural elements will contain child elements. Therefore, more often than not, you will be able to gain a further 2 pseudo-elements to use in the presentation by generating them from the first child (and even last-child) element of the parent element. In addition, you can use style changes on :hover to produce complex interaction effects.demo pages show how several popular examples of these effects can be achieved with this technique.
+Most structural elements will contain child elements. Therefore, more often than not, you will be able to gain a further 2 pseudo-elements to use in the presentation by generating them from the first child (and even last-child) element of the parent element. In addition, you can use style changes on.</p>
+<div class="blk"></div>
+
+
+
+
+<div>
+</div>
+</body>
+</html>

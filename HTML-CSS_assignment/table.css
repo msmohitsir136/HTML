@@ -1,0 +1,14 @@
+.col
+{
+width:150px;
+border-width:1px;
+border-style:solid;
+height:50px;
+}
+
+.tab
+{
+position:absolute;
+left:550px;
+width:30%;
+}

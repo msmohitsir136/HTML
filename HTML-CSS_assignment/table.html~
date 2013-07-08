@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="table.css">
+</head>
+<body>
+<table class="tab" cellspacing=0>
+<tr>
+	<td class="col" colspan=3></td>	
+	<td class="col" colspan=3></td>		
+</tr>
+
+
+<tr>
+	<td class="col" colspan=2></td>	
+	<td class="col" colspan=2></td>	
+	<td class="col" colspan=2></td>
+</tr>
+
+<tr>
+	<td class="col" colspan=3 rowspan=2></td>	
+	<td class="col" colspan=3> <tr><td class="col" colspan=2></td></tr> <tr></td></tr></td>	
+</tr>
+
+<tr>
+	<td class="col" colspan=4></td>
+	<td class="col" colspan=2></td>
+</tr>
+
+</table>
+</body>
+<html>
