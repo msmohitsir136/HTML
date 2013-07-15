@@ -1,0 +1,63 @@
+ Nitesh Kumar Pal: <!DOCTYPE html>
+<html>
+<head>
+	<title>Slide imnages</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+
+$.ajax({
+	url:'filedata.json',
+	method:'GET',
+    dataType:'json',  
+	success:function(response){
+		
+		for(i=0;i<response.data.length;i++)
+		{
+			var img1 = '<img class="img" height="100px" width="100px" src="'+response.data[i].image+'" fullImg="fullimg_'+i+'"/>';
+			$('#thumbImg').append(img1);
+            var img2 = '<img class="fullimg" style="display:none;" id="fullimg_'+i+'" height="500px" width="500px" src="'+response.data[i].image+'"/>';
+            $('#fullImg').append(img2);
+                        
+		}
+                
+                 $(".img").bind("click", showfullImage);
+                 
+	},
+	error:function (e){ alert('Something Broken Here ') ; console.log(e);}
+
+
+});
+
+
+});
+function showfullImage(){
+//.thishide{
+//	 left:'0px',
+ //     height:'0px',
+ //     width:'0px'
+//};
+
+var imgFullPath = $(this).attr('fullImg');
+var $img = $('#'+imgFullPath);
+//alert($img);
+console.log($img);
+$('.fullImg').animate({width: 'hide'});//.(function(){
+    //$(this).class="thishide"};
+$img.animate({width: "show"});
+
+
+}
+
+</script>
+	
+</head>
+<body>
+<div id="response"></div>
+<div id="fullImg" style="float: left; width: 100%"></div>
+<div id="thumbImg" style="float: left; width: 100%"></div>
+</body>
+</html>

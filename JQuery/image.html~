@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script>
+function uploadImage()
+{	
+	$.ajax({
+						url:'image.json',
+						method:'POST',
+						dataType:'json',
+						success:function(result)
+							{
+									$.each(result.horse, function(i, row) 
+										{
+												$('#full').append('<img class="xyz" style="display:none;" align="ceter" height="400px" width="400px" src="' + row.src + '" id="fullimg_'+i+'"></img>');
+												$('#thumb').append('<img class="abc" height="200px" width="200px" src="' +row.src + '" fullImg="fullimg_'+i+'" id="thumb_image'+i+'"></img>');
+											
+												
+										});
+
+													$(".abc").bind("click", function()
+														{
+																var imgFullPath=$(this).attr('fullImg');
+																var $ab = $('#'+imgFullPath);
+																console.log($ab);
+																$('.xyz').animate({width:'hide'},"fast(1000)");
+																$ab.animate({width:'show'},"slow(10000000)");
+														});
+										
+								},
+						error:function(){alert("Error inside the ajax code.");}
+});
+	
+}
+
+
+</script>
+<link rel="stylesheet" type="text/css" href="mycss.css"/>
+<body onload="uploadImage()">
+<div id="full" class="man">
+</div>
+<div id="thumb" class="shot"></div>
+</body>
+</head>
+</html>
